@@ -26,6 +26,7 @@ services:
       - ./data/apps:/var/www/html/apps
       - ./data/config:/var/www/html/config
       - ./data/data:/var/www/html/data
+      - ../transmission/data/download:/transmission/download
     networks:
     - back
   db:
