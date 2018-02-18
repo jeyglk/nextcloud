@@ -19,7 +19,7 @@ services:
     - back
     - lb_web
   app:
-    image: nextcloud:12-fpm
+    image: nextcloud:13-fpm
     links:
       - db
     volumes:
@@ -38,7 +38,7 @@ services:
     networks:
     - back
   cron:
-    image: nextcloud:12-fpm
+    image: nextcloud:13-fpm
     links:
       - db
     volumes_from:
