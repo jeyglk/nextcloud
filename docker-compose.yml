@@ -46,7 +46,7 @@ services:
     networks:
     - back
   db:
-    image: mysql:5.7
+    image: mysql
     volumes:
       - ./mysql/runtime:/var/lib/mysql
     environment:
